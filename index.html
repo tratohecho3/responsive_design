@@ -135,8 +135,11 @@
           // si se cumple hagamos esto
           console.log('se cumplió la condicion');
           $burguerButton.addEventListener('touchstart', toggleMenu);
+          $burguerButton.addEventListener('click', toggleMenu);
         } else {
           $burguerButton.removeEventListener('touchstart', toggleMenu);
+          $burguerButton.removeEventListener('click', toggleMenu);
+
           // si no se cumple hagamos esto
           console.log('no se cumplió la condicion');
         }
